@@ -78,7 +78,3 @@ def CreateProfile(request):
         'user_form': user_form,
         'parent_form': parent_form
     })
-<<<<<<< HEAD
-
-=======
->>>>>>> ali
