@@ -1,16 +1,17 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <h1>Log In</h1>
+    <h1>Parent Profile</h1>
     {% if error_message %}
         <p class="text-danger">{{error_message}}</p>
     
     {% endif %}
-    <form action="{% url 'signup' %}" method="POST">
+    <form action="{% url 'create_profile' %}" method="POST">
         
         
         {% csrf_token %}
-        {{form.as_p}}
+        {{user_form.as_p}}
+        {{parent_form.as_p}}
         
         <input type="submit" value="Sign up" name="" id="" class="btn btn-secondary">
         
